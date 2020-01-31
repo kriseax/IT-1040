@@ -1,4 +1,12 @@
 '''
+GRADE ENTRY PROGRAM
+This program prompts a user to enter a username and password and ensures they both meet length constraints
+The program then asks the user to enter the number of students they are entering grades for and then the user
+enters the names and scores for each student. 
+The program then converts scores to letter grades, calcultates the average student score, and prints output to the terminal.
+'''
+
+'''
 Function to validate username and password
 Input Parameters: input string, minimum length, maximum length
 Output: True if user input meets length constraints
