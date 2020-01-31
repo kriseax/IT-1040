@@ -1,11 +1,49 @@
-
+'''
+Function to validate username and password
+Input Parameters: input string, minimum length, maximum length
+Output: True if user input meets length constraints
+        False if user input doesn't meet length constraints 
+'''
 def validate_user_pass(user_input, min_length, max_length):
     input_length = len(user_input)
     if input_length >= min_length and input_length <= max_length:
         return True
     else:
         return False
- 
+
+'''
+Function to convert a number score to a letter grade
+Input Parameters: score
+Output: the letter grade A-F
+'''
+def score_to_letter(score):
+    if score >= 90:
+        return "A"
+    elif score >= 80:
+        return "B"
+    elif score >= 70:
+        return "C"
+    elif score >= 60:
+        return "D"
+    else:
+        return "F"
+    
+'''
+Function to calculate the class average score
+Input Parameters: an array of scores
+Output: average score
+'''
+def class_avg(scores_array):
+    sum = 0
+    
+    for index in range(len(scores_array)):
+        sum = sum + scores_array[index]
+
+    return sum / len(scores_array)
+    
+'''
+This is our main function
+'''
 def main():
 
     invalid_input = True
@@ -37,25 +75,36 @@ def main():
     #Get students and scores. Store in arrays
     student_array = []
     scores_array = []
+    letter_grades = []
 
-    for counter in range(int(num_student)):
+    for counter in range(int(num_students)):
         stu_name = input("Enter student name: ")
         stu_score = input("Enter student score: ")
 
+        #print a blank space for clarity
+        print()
+
         #Add items to arrays
         student_array.append(stu_name)
-        scores_array.append(stu_score)
+        scores_array.append(int(stu_score))
                         
     #Covert scores to letter grades. Write a function to do this
+    for index in range(len(scores_array)):
+        letter_grades.append(score_to_letter(scores_array[index]))
     
     #Compute class average and lette grade
-        
+    avg_score = class_avg(scores_array)
+
+    print()    
     #print student names, scores, letter grade
-    print(student_array)
-    print(scores_array)
-
-    #Print class average and average letter grade
-
+    for index in range(len(student_array)):
+        print(student_array[index]+":", scores_array[index],":", letter_grades[index])
     
+    #print a blank space for clarity
+    print()
+    
+    #Print class average and average letter grade
+    print("Class Average:", avg_score)
+
 if __name__ == "__main__":
     main()
