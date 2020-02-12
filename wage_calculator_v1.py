@@ -1,3 +1,4 @@
+#Wage Calculator program
 
 def main():
     while (True):
