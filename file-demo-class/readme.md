@@ -10,4 +10,8 @@ These examples were developed in class on Wednesday, February 19th to introduce 
 - Processing data that was read from a file
 - Exception handling
 
-This folder contains three Python files, file_demo 1,2,3, each containing code as we progressed through the lesson, demonstrating different features of handling files in Python.
+### Folder Contents
+**3 Python Files:**
+file_demo 1,2,3, each containing code as we progressed through the lesson, demonstrating different features of handling files in Python.
+**2 Text Files**
+
