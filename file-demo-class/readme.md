@@ -8,3 +8,5 @@ These examples were developed in class on Wednesday, February 19th to introduce 
 - Writing to files
 - Looping throgh files for efficient reading/writing
 - Exception handling
+
+This folder contains three python files
