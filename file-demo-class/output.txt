@@ -1,4 +1,0 @@
-Snoopy Dog, 100, 75, 81
-Charlie Brown, 95, 92, 88
-Porky Pig, 90, 89, 88
-Jerry Mouse, 74, 100, 79
