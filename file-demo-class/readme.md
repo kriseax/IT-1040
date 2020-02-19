@@ -15,4 +15,4 @@ These examples were developed in class on Wednesday, February 19th to introduce 
 file_demo 1,2,3, each containing code as we progressed through the lesson, demonstrating different features of handling files in Python.  
 
 **1 Text File**  
-students.txt contains the data we read the file and processed.
+students.txt contains the data we read from the file and processed.
