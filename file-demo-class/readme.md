@@ -9,4 +9,4 @@ These examples were developed in class on Wednesday, February 19th to introduce 
 - Looping throgh files for efficient reading/writing
 - Exception handling
 
-This folder contains three python files
+This folder contains three Python files, file_demo 1,2,3, each containing code as we progressed through the lesson, demonstrating different features of handling files in Python.
